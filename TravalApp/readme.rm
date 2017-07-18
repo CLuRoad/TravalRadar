@@ -1,0 +1,5 @@
+
+// 打包zip
+
+rm -rf ./bundle && mkdir bundle && react-native bundle --entry-file index.ios.js --bundle-output ./bundle/index.ios.jsbundle --platform ios --assets-dest ./bundle --dev false && cd ./bundle && zip index.ios.jsbundle.zip ./index.ios.jsbundle && cd ..
+	
